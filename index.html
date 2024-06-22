@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Tomal's Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+        }
+        .cover-photo {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.5s ease;
+        }
+        .details, .hobbies, .education {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            text-align: left;
+        }
+        .details h3, .hobbies h3, .education h3 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .details p, .hobbies p, .education p, .education ul li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .details strong, .hobbies strong, .education strong {
+            color: #333;
+        }
+        .gallery {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            display: none;
+        }
+        .gallery img.active {
+            display: block;
+        }
+        .description {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .nav button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .nav button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .animate {
+            transform: scale(1.2);
+        }
+        .external-links {
+            margin-top: 50px;
+            vertical-align: middle;
+            margin-top: 17px;
+            margin-right: 10px;
+        }
+        .external-links img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-top: 17px;
+            margin-right: 10px;
+        }
+        .external-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            margin-top: 17px;
+            margin-right: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Tomal's Page</h1>
+    </header>
+    <section id="about">
+        <img class="cover-photo" src="Cover University page.JPG" alt="University Cover Page">
+        <img src="Tomal.jpeg" alt="Tomal's Picture">
+        <div class="details">
+            <h3>Personal Details</h3>
+            <p><strong>University Name:</strong> ALFA University College (AUC)</p>
+            <p><strong>Lecture Name:</strong> Mr. Zainuddin Bin Johori</p>
+            <p><strong>Subject Name/Code:</strong> Integrative Programming & Technologies (BIT4214)</p>
+            <p><strong>Assignment:</strong> 2</p>
+            <p><strong>Student Name:</strong> Abu Sazid Chowdhury Tomal</p>
+            <p><strong>Student ID:</strong> ALFA2022-0043</p>
+            <p><strong>Student Email:</strong> Asctomal13@gmail.com</p>
+            <p><strong>Student Mobile No:</strong> +601136695237</p>
+            <p><strong>Student Address:</strong> 27/1A Taragon Puteri Bintang, Bukit Bintang</p>
+        </div>
+        <div class="hobbies">
+            <h3>Hobbies</h3>
+            <p>1. <strong>Exploring Nature:</strong> I find peace and inspiration in exploring forests, mountains, and coastlines, appreciating the beauty of natural landscapes and wildlife.</p>
+            <p>2. <strong>Photography:</strong> Capturing moments and scenes through photography allows me to express creativity and preserve memories in a visual form.</p>
+            <p>3. <strong>Cooking:</strong> Experimenting with ingredients and flavors in the kitchen is a passion of mine. Cooking not only satisfies my palate but also allows me to unwind and be creative.</p>
+            <p>4. <strong>Learning Languages:</strong> Mastering different languages opens doors to new cultures and perspectives. It's a challenging yet rewarding hobby that expands my understanding of the world.</p>
+        </div>
+        <div class="education">
+            <h3>Education Details</h3>
+            <p><strong>Semester:</strong> 6</p>
+            <ul>
+                <li>Integrative Programming &amp; Technologies (BIT4214) By Mr. Zainuddin</li>
+                <li>Visual Basic.NET Programming (BIT4204) By Mr. Samson Idemudia</li>
+                <li>Fundamental of Networking (BIT4193) By Mr. Samson Idemudia</li>
+                <li>Advanced Academic Reading &amp; Writing (ENG4013) By Ms. Maheswari</li>
+            </ul>
+        </div>
+    </section>
+    <section id="places">
+        <h2>Places I Have Visited in Malaysia</h2>
+        <div class="gallery">
+            <img src="KUALA LUMPUR.jpg" alt="KUALA LUMPUR" class="active">
+            <img src="TAIPING.jpg" alt="TAIPING">
+            <img src="KUCHING.jpg" alt="KUCHING">
+            <img src="KUALA KANGSAR.jpg" alt="KUALA KANGSAR">
+            <img src="KOTA KINABALU.jpg" alt="KOTA KINABALU">
+            <div class="nav">
+                <button id="prev">&#10094;</button>
+                <button id="next">&#10095;</button>
+            </div>
+            <div class="description" id="description">
+                Kuala Lumpur, the capital city of Malaysia, is a vibrant metropolis known for its modern skyline dominated by the iconic Petronas Twin Towers.
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Thank you for visiting my page!</p>
+        <p>&copy; 2024 Alfa University College. All rights reserved.</p>
+        <div class="external-links">
+            <a class="button" href="https://alfa.edu.my" target="_blank"><img src="university-solid.svg" alt="University"> ALFA University</a>
+            <a class="button" href="https://wa.me/+601136695237" target="_blank"><img src="whatsapp.svg" alt="WhatsApp">Tomal</a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll(".gallery img");
+            const descriptions = [
+                "Kuala Lumpur, the capital city of Malaysia, is a vibrant metropolis known for its modern skyline dominated by the iconic Petronas Twin Towers.",
+                "Taiping, located in the state of Perak, Malaysia, is a charming town known for its rich history and lush natural beauty.",
+                "Kuching, the capital of Sarawak in Malaysian Borneo, is known for its unique blend of cultures, vibrant arts scene, and picturesque waterfront.",
+                "Kuala Kangsar, located in the state of Perak, Malaysia, is a royal town known for its historical significance and beautiful architecture.",
+                "Kota Kinabalu, the capital of Sabah in Malaysian Borneo, is a vibrant coastal city known for its stunning sunsets, bustling markets, and gateway to natural wonders."
+            ];
+
+            let currentIndex = 0;
+
+            const prevButton = document.getElementById("prev");
+            const nextButton = document.getElementById("next");
+            const descriptionElement = document.getElementById("description");
+
+            function showImage(index) {
+                images.forEach((img, i) => {
+                    img.classList.toggle("active", i === index);
+                });
+                descriptionElement.textContent = descriptions[index];
+            }
+
+            prevButton.addEventListener("click", function() {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+                showImage(currentIndex);
+            });
+
+            nextButton.addEventListener("click", function() {
+                currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+                showImage(currentIndex);
+            });
+
+            // Initial display
+            showImage(currentIndex);
+
+            const imgElements = document.querySelectorAll("img");
+
+            imgElements.forEach(img => {
+                img.addEventListener("mouseover", function() {
+                    this.classList.add("animate");
+                });
+                img.addEventListener("mouseout", function() {
+                    this.classList.remove("animate");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
